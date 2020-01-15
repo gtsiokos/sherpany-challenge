@@ -1,0 +1,51 @@
+.panel {
+  composes: panel from './ui/panel.css';
+}
+
+.panelHeader {
+  composes: panelHeader from './ui/panel.css';
+}
+
+/***********
+ Settings List
+***********/
+
+.list {
+  width: 1500rem;
+  overflow-y: auto !important;
+}
+
+.listRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listHeader {
+  font-size: 21rem;
+  font-weight: normal;
+  margin-top: 13rem;
+  padding-bottom: 5rem;
+  margin-bottom: 19rem;
+  color: #37c4c3;
+  border-bottom: solid 1rem #37c4c3;
+}
+
+.listHeader:first-child {
+  margin-top: 0;
+}
+
+.listItem {
+  width: 260rem;
+  margin-right: 17rem;
+  margin-bottom: 17rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19rem;
+}
+
+.listItem label {
+  font-weight: bold;
+}

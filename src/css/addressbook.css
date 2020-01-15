@@ -1,0 +1,165 @@
+.panel {
+  composes: panel from './ui/panel.css';
+}
+
+.panelHeader {
+  composes: panelHeader from './ui/panel.css';
+}
+
+/***********
+ Addressbook List
+***********/
+
+.list {
+  width: 1500rem;
+  overflow-y: auto !important;
+}
+
+.listRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listItem {
+  width: 260rem;
+  height: 150rem;
+  margin-right: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16rem;
+}
+
+.listItemHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listItemHeader:hover {
+  color: #f0a098;
+  cursor: pointer;
+}
+
+.listItemName {
+  font-size: 21rem;
+  color: #ed8b82;
+}
+
+.listItemThumbnail {
+  width: 60rem;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listItemThumbnail img {
+  width: 48rem;
+  height: 48rem;
+  background: #37c4c3;
+  border: solid 3rem #37c4c3;
+  border-radius: 60rem;
+}
+
+.listItemDetails {
+  margin-top: 7rem;
+  font-size: 15rem;
+  line-height: 1.5;
+}
+
+.listItemDetail [class^='fa'] {
+  width: 15rem;
+  font-size: 13rem;
+  text-align: center;
+  margin-right: 7rem;
+  color: #37c4c3;
+}
+
+.listItemHeaderName {
+  flex-grow: 1;
+}
+
+/***********
+ Addressbook Modal
+***********/
+.modalCloseBtn {
+  display: block;
+  position: absolute;
+  top: -12rem;
+  right: -9rem;
+  font-size: 48rem;
+  color: #ed8b82;
+  transition: all 250ms;
+}
+
+.modalCloseBtn:hover {
+  color: #f0a098;
+  cursor: pointer;
+}
+
+.modalItem {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+.modalItem h2 {
+  font-size: 28rem;
+  margin-bottom: 21rem;
+}
+
+.modalItem h3 {
+  font-size: 21rem;
+  font-weight: normal;
+  margin-top: 13rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  color: #37c4c3;
+  border-bottom: solid 1rem #37c4c3;
+}
+
+.modalItem h3:first-child {
+  margin-top: 0;
+}
+
+.modalItemThumbnail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 230rem;
+}
+
+.modalItemThumbnail img {
+  width: 200rem;
+  height: 200rem;
+  background: #37c4c3;
+  border: solid 6rem #37c4c3;
+  border-radius: 100rem;
+}
+
+.modalItemData {
+  display: flex;
+  flex-direction: column;
+  font-size: 19rem;
+}
+
+.modalItemData div {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.modalItemData div :first-child {
+  font-weight: bold;
+}
+
+.modalItemLocation {
+  composes: modalItemData;
+}
+
+.modalItemContact {
+  composes: modalItemData;
+}
